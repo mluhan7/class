@@ -1,0 +1,29 @@
+<!--pages/login/login.wxml-->
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}">
+    <view slot="backText" bindtap='pageBack'>返回</view>
+    <view slot="content">登录</view>
+</cu-custom>
+<view class="login_content">
+<view class="tips">
+    <text>管理组织请先登录哦~</text>
+</view>
+<form bindsubmit="formSubmit">
+    <view class="input_area">
+        <view class="_login login_email">
+            <image src="../../images/email.png"></image>
+            <input id="user_email" class="_input" name="user_email" maxlength="40" type="text" placeholder="邮箱"></input>
+        </view>
+        <view class="_login login_password">
+            <image src="../../images/password.png"></image>
+            <input id="user_password" class="_input" name="user_password" maxlength="20" type="password" placeholder="密码"></input>
+        </view>
+    </view>
+    <view class="button_area">
+        <button disabled="{{disabled}}" style="background-color:{{loginBtnColor}}" form-type="submit" loading="{{btnLoading}}">{{loginBtnText}}</button>
+        <view class="txt_area">
+            <button class="_submit" bindtap="applyAdmin">申请成为管理员</button>
+            <button class="_submit" formType="submit" >登录</button>
+        </view>
+    </view>
+</form>
+</view>

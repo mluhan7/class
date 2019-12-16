@@ -1,0 +1,309 @@
+/* pages/invitations/invitations.wxss */
+.topbar {
+  height: 35px;
+}
+.tabtitle {
+  display: inline-block;
+  margin: 8rpx 60rpx;
+  font-size: 15px;
+}
+.select-t {
+  color: #00b26a;
+  text-decoration: underline;
+  font-weight: 700;
+}
+/*广场*/
+
+.wrapper_s {
+  font-size: 14px;
+  margin-bottom: 15px;
+  height: 40px;
+  width: 100%;
+  padding: 0 10rpx;
+}
+.form {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+}
+.wrapper_input {
+  width: 50%;
+  background-color: #f6f4f4;
+  margin: 0 12px 4px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 31px;
+  border: 1px solid transparent;
+  border-radius: 14px;
+}
+.icon_s {
+  display: inline-block;
+  float: left;
+  height: 31px;
+  line-height: 31px;
+  width: 5%;
+  margin: 0 4px 0 10px;
+}
+.input_search {
+  float: right;
+  display: inline-block;
+  height: 100%;
+  width: 80%;
+  overflow: hidden; 
+  text-overflow:ellipsis; 
+  white-space: nowrap; 
+}
+.btn_search {
+  display: inline-block;
+  height: 31px;
+  line-height: 31px;
+  font-size: 14px;
+  margin-left: 3px;
+  border-radius: 14px;
+  background: #333333;
+  color: white;
+  position: relative;
+  top: -4px;
+  width: 20%;
+}
+.wrapper-inv {
+  width: 100%;
+  margin-bottom: 50rpx;
+}
+.inv {
+  /*box-sizing: border-box;*/
+  height: 300rpx;
+  width: 80%;
+  padding: 18rpx 22rpx;
+  color: white;
+  box-shadow: 0 6px 10px #b5b4b4;
+  border-radius: 10rpx;
+  font-size: 14px;
+  background-color: #333333;
+}
+.line1 {
+  /*float: right;*/
+  height: 54rpx;/*18%*/
+  text-align: right;
+}
+.wrappertags {
+  
+  
+}
+.line2 {
+  margin-top: 4px;
+  height: 186rpx; /*62%*/
+  line-height: 46.5rpx;/*186/4=46.5*/
+  font-size: 16px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+.line3 {
+  height: 60rpx;/*20%*/
+  display: flex;
+  align-items: flex-end;
+}
+.wrapwords {
+  text-align: right;
+}
+.word {
+  position: relative;
+  top: -7px;
+  background: #00b26a;
+  padding: 4rpx 10rpx;
+  border-radius: 10rpx;
+  margin-right: 4px;
+  color: white;
+}
+.uname {
+  color: white;
+  background-color: #eb5528;
+  height: 25px;
+  line-height: 25px;
+  padding: 1px 5px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.usex {
+  margin-right: 4px;
+  
+  height: 25px;
+  line-height: 25px;
+}
+.umajor {
+  color: white;
+  background-color: #eb5528;
+  height: 25px;
+  line-height: 25px;
+  padding: 1px 5px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+.noresult {
+  height: 100%;
+  font-size: 14px;
+}
+/*我的邀约*/
+.empty::after {
+  content: '您还没有发布过自习邀约...';
+  height: 50rpx;
+  width: 100rpx;
+  font-size: 14px;
+  color: gray;
+  position: relative;
+  top: 100rpx;
+  left: 50%;
+  margin-left: -50rpx;
+}
+.wrapper-my {
+  width: 90%;
+
+}
+.icon-inv {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 300rpx;
+  margin-bottom: 90rpx;
+}
+.icons {
+  width: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-right: 25rpx;
+  
+}/*
+.icon1, icon2{
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  border: 1px solid red;
+  /*border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  text-align: center;
+}*/
+.icon1 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.my-wrapper-inv {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-content: center;
+}
+.my-inv {
+  /*box-sizing: border-box;*/
+  width: 100%;
+  height: 100%;
+  padding: 18rpx 22rpx;
+  color: white;
+  box-shadow: 0 6px 10px #b5b4b4;
+  border-radius: 10rpx;
+  font-size: 14px;
+  background-color: #333333;
+}
+/*加号*/
+.bt-add {
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  bottom: 10rpx;
+  right: 10rpx;
+  border: 1px solid #00b26a;
+  border-radius: 50%;
+  box-shadow: 0 6px 10px #b5b4b4;
+  
+  
+}
+/*.invmodal {
+  background: lightblue;
+}*/
+/*发布邀约*/
+.wrapper-modal {
+  font-size: 14px;
+  color: #4d5674;
+}
+.newillu {
+  height: 300rpx;
+  font-size: 14px;
+  border-radius: 2px;
+} 
+.newillu textarea{
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+.place-holder {
+  margin: 5px;
+}
+.w-input {
+  margin-left: 8px;
+}
+.win-1{
+  background-color: #e0edf6;
+  border-bottom: 2px solid #b1c9ee;
+}
+.win-2{
+  background-color: #e2eaed;
+  border-bottom: 2px solid #bdcad6;
+}
+
+
+.newwrapper {
+  align-items: flex-end;
+  margin-top: 10px;
+}
+.newtitle {
+  width: 70px;
+}
+.newcontent {
+  flex: 1;
+}
+
+
+.radio-box{
+  display: inline-block;
+  
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.radio {
+  margin-left: 20px;
+}
+.sex_check {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  vertical-align: middle;
+  cursor: pointer;
+  background: #D7D7D9;
+  margin-right: 4px;
+}
+
+.checked {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: -1px;
+}
+/* 查看邀约*/
+.look {
+  background-color: white;
+  padding: 50rpx;
+}
+.close {
+  text-align: center;
+  background-color: #00b26a;
+}
